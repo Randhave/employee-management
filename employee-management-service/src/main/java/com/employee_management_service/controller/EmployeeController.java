@@ -1,6 +1,6 @@
 package com.employee_management_service.controller;
 
-import com.example.employee.api.EmployeesApi;
+import com.example.employee.api.EmployeeApi;
 import com.example.employee.model.EmployeeDTO;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -10,7 +10,8 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/client-api/v1")
-public class EmployeeController implements EmployeesApi {
+public class EmployeeController implements EmployeeApi {
+
     @Override
     public ResponseEntity<EmployeeDTO> createNewEmployee(EmployeeDTO employeeDTO) {
         return null;
